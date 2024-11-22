@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia One Piece</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://img.icons8.com/emoji/48/pirate-flag.png" type="image/x-icon">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🏴‍☠️ Trivia One Piece 🏴‍☠️</h1>
+      <p>Responde preguntas, encuentra a Chopper y colecciona los regalos. 🎁</p>
+      <button id="music-toggle">🎵 Reproducir Música</button>
+    </header>
+
+    <!-- Barra de progreso -->
+    <div id="score-bar-container">
+      <div id="score-bar"></div>
+    </div>
+
+    <!-- Temporizador -->
+    <div id="timer" style="font-size: 1.5rem; color: #fff; margin-bottom: 20px;"></div>
+
+    <!-- Pantalla de preguntas -->
+    <div id="question-screen" class="screen">
+      <h2 id="question-text"></h2>
+      <div id="answers"></div>
+    </div>
+
+    <!-- Pantalla de puntaje -->
+    <div id="score-screen" class="screen hidden">
+      <h1>¡Felicitaciones! 🎉</h1>
+      <p id="score-text"></p>
+      <button id="restart-button">Reiniciar Trivia</button>
+    </div>
+
+    <!-- Contenedor para los memes -->
+    <div id="meme-screen" class="hidden">
+      <img id="meme-img" src="" alt="Meme" />
+      <button id="continue-button">Continuar</button>
+    </div>
+
+    <!-- Contenedor de regalos -->
+    <div id="gift-screen" class="hidden">
+      <h2>¡Ganaste un regalo! 🎁</h2>
+      <p id="gift-number"></p>
+      <button id="gift-continue-button">Continuar</button>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="https://vgmsite.com/soundtracks/one-piece-memories-of-music/rdjxnlabgr/18.%20We%20Are%21.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
