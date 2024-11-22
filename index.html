@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trivia One Piece</title>
+  <title>Trivia de Regalos</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="https://img.icons8.com/emoji/48/pirate-flag.png" type="image/x-icon">
 </head>
 <body>
   <div id="app">
     <header>
-      <h1>🏴‍☠️ Trivia One Piece 🏴‍☠️</h1>
-      <p>Responde preguntas, encuentra a Chopper y colecciona los regalos. 🎁</p>
+      <h1>🎄 Trivia de Regalos 🎄</h1>
+      <p>Responde preguntas y colecciona regalos cada 50 puntos. 🎁</p>
       <button id="music-toggle">🎵 Reproducir Música</button>
     </header>
 
-    <!-- Barra de progreso -->
+    <!-- Barra de progreso con regalos -->
     <div id="score-bar-container">
-      <div id="score-bar"></div>
+      <div id="score-bar">
+        <div class="gift-icon" id="gift-icon-1">🎁</div>
+        <div class="gift-icon" id="gift-icon-2">🎁</div>
+        <div class="gift-icon" id="gift-icon-3">🎁</div>
+      </div>
     </div>
 
     <!-- Temporizador -->
@@ -36,13 +40,7 @@
       <button id="restart-button">Reiniciar Trivia</button>
     </div>
 
-    <!-- Contenedor para los memes -->
-    <div id="meme-screen" class="hidden">
-      <img id="meme-img" src="" alt="Meme" />
-      <button id="continue-button">Continuar</button>
-    </div>
-
-    <!-- Contenedor de regalos -->
+    <!-- Pantalla de regalos -->
     <div id="gift-screen" class="hidden">
       <h2>¡Ganaste un regalo! 🎁</h2>
       <p id="gift-number"></p>
